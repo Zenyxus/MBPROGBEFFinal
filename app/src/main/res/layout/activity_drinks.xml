@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+            tools:context=".DrinksActivity">
+
+        <Button
+            android:id="@+id/myOrderbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:onClick="myorder2"
+            android:text="My Order"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/aqua"
+            android:layout_width="147dp"
+            android:layout_height="178dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="101dp"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:onClick="paydrinkaqua"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/apple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mineralwater" />
+
+        <ImageButton
+            android:id="@+id/golda"
+            android:layout_width="147dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="34dp"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:onClick="paydrinkcoffee"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appleprice"
+            app:srcCompat="@drawable/golda" />
+
+        <ImageButton
+            android:id="@+id/cocacola"
+            android:layout_width="147dp"
+            android:layout_height="178dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:onClick="paydrinkcocacola"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/golda"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aquaprice"
+            app:srcCompat="@drawable/cocacola" />
+
+        <ImageButton
+            android:id="@+id/manggo"
+            android:layout_width="147dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:onClick="paydrinkmanggo"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/avocado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/softdrinkprice"
+            app:srcCompat="@drawable/manggojuice" />
+
+        <ImageButton
+            android:id="@+id/apple"
+            android:layout_width="147dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:onClick="paydrinkapel"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/aqua"
+            app:layout_constraintTop_toBottomOf="@+id/myOrderbtn"
+            app:srcCompat="@drawable/applejuice" />
+
+        <ImageButton
+            android:id="@+id/avocado"
+            android:layout_width="147dp"
+            android:layout_height="178dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:onClick="paydrinkavocado"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/manggo"
+            app:layout_constraintTop_toBottomOf="@+id/coffeeprice"
+            app:srcCompat="@drawable/avocadojuice" />
+
+        <TextView
+            android:id="@+id/aquatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="6dp"
+            android:text="Air Mineral"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aqua" />
+
+        <TextView
+            android:id="@+id/cocacolatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:layout_marginEnd="126dp"
+            android:text="Soft Drinks"
+            app:layout_constraintEnd_toStartOf="@+id/coffeetext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cocacola" />
+
+        <TextView
+            android:id="@+id/softdrinkprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:layout_marginEnd="144dp"
+            android:text="Rp 4000"
+            app:layout_constraintEnd_toStartOf="@+id/coffeeprice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cocacolatext" />
+
+        <TextView
+            android:id="@+id/coffeetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="96dp"
+            android:text="Coffee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/golda" />
+
+        <TextView
+            android:id="@+id/coffeeprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="87dp"
+            android:text="Rp 3000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coffeetext" />
+
+        <TextView
+            android:id="@+id/avocadotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:text="Jus Alpukat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/manggotext"
+            app:layout_constraintTop_toBottomOf="@+id/avocado" />
+
+        <TextView
+            android:id="@+id/manggotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="73dp"
+            android:text="Jus Mangga"
+            app:layout_constraintEnd_toStartOf="@+id/avocadotext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manggo" />
+
+        <TextView
+            android:id="@+id/avocadoprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="111dp"
+            android:layout_marginEnd="42dp"
+            android:text="Rp 5000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/manggoprice"
+            app:layout_constraintTop_toBottomOf="@+id/avocadotext" />
+
+        <TextView
+            android:id="@+id/manggoprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:text="Rp 4000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manggotext" />
+
+        <TextView
+            android:id="@+id/appletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="39dp"
+            android:text="Jus Apel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/aquatext"
+            app:layout_constraintTop_toBottomOf="@+id/apple" />
+
+        <TextView
+            android:id="@+id/aquaprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="1dp"
+            android:text="Rp 2000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aquatext" />
+
+        <TextView
+            android:id="@+id/appleprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="41dp"
+            android:text="Rp 3000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/aquaprice"
+            app:layout_constraintTop_toBottomOf="@+id/appletext" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
